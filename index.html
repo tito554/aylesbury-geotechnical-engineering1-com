@@ -90,6 +90,42 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#374151) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){
+  aside{position:relative}
+  aside+main,aside~main,aside~div>main{margin-left:0}
+  .content-area{display:flex;gap:1rem}
+}
+@media (max-width:900px){
+  aside{width:100% !important;position:static !important;height:auto !important}
+  .navbar{flex-wrap:wrap}
+}
+</style>
 </head><body>
 
 <nav class="navbar">
@@ -109,7 +145,7 @@ header.hero, .hero { position: relative !important; }
     <a class="hero-cta" href="#main-content">DETAILS →</a>
 </div></header>
 
-<section id="main-content" class="section"><p>In Aylesbury, we often see foundation designs that underestimate just how much the ground can change across a single site. The town sits on a mix of Gault Clay, Upper Greensand, and chalk of the Grey Chalk Subgroup, and the transition zones between these units are rarely as clean as the geological maps suggest. A desktop study alone won't tell you how stiff the clay actually is at 3 metres depth, or whether solution features in the chalk pose a real risk beneath your footing line. That's where a properly scoped soil mechanics study comes in. Our lab, accredited to ISO 17025, runs the full suite of classification and strength tests—from moisture content and Atterberg limits through to effective-stress triaxial—so the ground model you feed into your Eurocode 7 design is based on measured parameters, not conservative assumptions lifted from a textbook. When we're on the rotary rig south of the A41, we're not just logging strata; we're building a picture of how the ground will actually behave under load, which is especially critical in areas where the chalk cover thins and the Gault Formation introduces medium-plasticity clays into the bearing stratum.</p><blockquote style="border-left:4px solid #B08D4A;background:rgba(0,0,0,.03);padding:1rem 1.25rem;margin:1.5rem 0 1.5rem 1rem;font-style:italic;color:#333;font-size:1.05rem;line-height:1.55;border-radius:0 6px 6px 0">In Aylesbury, the biggest risk isn't the clay or the chalk—it's the transition zone between them, where stiffness can halve in less than a metre.</blockquote></section>
+<section id="main-content" class="section"><p>In Aylesbury, we often see foundation designs that underestimate just how much the ground can change across a single site. The town sits on a mix of Gault Clay, Upper Greensand, and chalk of the Grey Chalk Subgroup, and the transition zones between these units are rarely as clean as the geological maps suggest. A desktop study alone won't tell you how stiff the clay actually is at 3 metres depth, or whether solution features in the chalk pose a real risk beneath your footing line. That's where a properly scoped soil mechanics study comes in. Our lab, accredited to ISO 17025, runs the full suite of classification and strength tests—from moisture content and <a href="/atterberg-limits/">Atterberg limits</a> through to effective-stress triaxial—so the ground model you feed into your Eurocode 7 design is based on measured parameters, not conservative assumptions lifted from a textbook. When we're on the rotary rig south of the A41, we're not just logging strata; we're building a picture of how the ground will actually behave under load, which is especially critical in areas where the chalk cover thins and the Gault Formation introduces medium-plasticity clays into the bearing stratum.</p><blockquote style="border-left:4px solid #B08D4A;background:rgba(0,0,0,.03);padding:1rem 1.25rem;margin:1.5rem 0 1.5rem 1rem;font-style:italic;color:#333;font-size:1.05rem;line-height:1.55;border-radius:0 6px 6px 0">In Aylesbury, the biggest risk isn't the clay or the chalk—it's the transition zone between them, where stiffness can halve in less than a metre.</blockquote></section>
 
 
     <section class="section img-inline-block" style="padding:1.5rem 2.5rem">
